@@ -1,0 +1,834 @@
+@import url(bootstrap-theme.css);
+@import url(bootstrap.min.css);
+@import "http://fonts.googleapis.com/css?family=Asap:400,500&display=swap";
+@import url(owl.theme.default.min.css);
+@import url(owl.carousel.min.css);
+@import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit; }
+
+.header {
+  background-image: url("../images/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header .container .navbar-default .navbar-toggle {
+    margin-top: 15px; }
+  .header .container .navbar-default {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: none; }
+    .header .container .navbar-default ul {
+      list-style: none; }
+      .header .container .navbar-default ul li {
+        text-transform: uppercase;
+        margin-top: 20px; }
+        @media screen and (max-width: 768px) {
+          .header .container .navbar-default ul li {
+            margin-top: 5px; } }
+        .header .container .navbar-default ul li:hover a:after {
+          width: 100%; }
+        .header .container .navbar-default ul li a {
+          text-decoration: none;
+          color: #4d4d4d;
+          font-size: 16px; }
+          @media screen and (max-width: 767px) {
+            .header .container .navbar-default ul li a {
+              font-size: 12px; } }
+          .header .container .navbar-default ul li a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #7c8899;
+            transition: 0.3s;
+            margin-top: 9px; }
+  .header .container .block-foto {
+    max-width: 580px; }
+    @media screen and (max-width: 1024px) {
+      .header .container .block-foto {
+        max-width: 400px; } }
+    @media screen and (max-width: 768px) {
+      .header .container .block-foto {
+        max-width: 280px; } }
+    @media screen and (max-width: 767px) {
+      .header .container .block-foto {
+        margin-top: 15px;
+        max-width: 100%; } }
+  .header .container .foto-Luis {
+    width: 100%; }
+  .header .container .name {
+    font-family: "Asap", sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    color: #4d4d4d;
+    margin-top: 175px; }
+    @media screen and (max-width: 1024px) {
+      .header .container .name {
+        font-size: 70px;
+        margin-top: 120px; } }
+    @media screen and (max-width: 992px) {
+      .header .container .name {
+        font-size: 50px;
+        margin-top: 75px; } }
+    @media screen and (max-width: 768px) {
+      .header .container .name {
+        font-size: 50px;
+        margin-top: 60px; } }
+  .header .container .user {
+    font-family: "Asap", sans-serif;
+    font-size: 22px;
+    color: #4d4d4d;
+    margin-top: 23px;
+    margin-bottom: 32px; }
+    @media screen and (max-width: 1024px) {
+      .header .container .user {
+        font-size: 18px;
+        margin-top: 30px; } }
+    @media screen and (max-width: 992px) {
+      .header .container .user {
+        font-size: 16px;
+        margin-top: 25px; } }
+    @media screen and (max-width: 768px) {
+      .header .container .user {
+        font-size: 14px;
+        margin-top: 20px; } }
+  .header .container .btn {
+    font-family: "Asap", sans-serif;
+    font-size: 16px;
+    color: #4d4d4d;
+    height: 50px;
+    width: 160px;
+    border: 1px solid #4d4d4d;
+    margin: 0 10px;
+    padding-top: 14px; }
+    .header .container .btn:hover .btn:after {
+      width: 100%; }
+    .header .container .btn:hover {
+      content: '';
+      display: inline-block;
+      width: 160px;
+      height: 48px;
+      background-color: white;
+      transition: 0.3s;
+      border: none; }
+      @media screen and (max-width: 992px) {
+        .header .container .btn:hover {
+          width: 110px;
+          height: 45px;
+          padding-top: 12px;
+          font-size: 13px; } }
+      @media screen and (max-width: 768px) {
+        .header .container .btn:hover {
+          width: 100px;
+          height: 33px;
+          padding-top: 10px; } }
+    @media screen and (max-width: 992px) {
+      .header .container .btn {
+        width: 110px;
+        height: 45px;
+        padding-top: 12px;
+        font-size: 13px; } }
+    @media screen and (max-width: 768px) {
+      .header .container .btn {
+        font-size: 12px;
+        height: 35px;
+        width: 100px; } }
+
+.about {
+  padding-top: 110px;
+  padding-bottom: 120px; }
+  @media screen and (max-width: 1024px) {
+    .about {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
+  @media screen and (max-width: 992px) {
+    .about {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+  @media screen and (max-width: 768px) {
+    .about {
+      padding-bottom: 50px;
+      padding-top: 50px; } }
+  .about .container h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #4d4d4d; }
+    @media screen and (max-width: 1024px) {
+      .about .container h2 {
+        font-size: 42px; } }
+    @media screen and (max-width: 992px) {
+      .about .container h2 {
+        font-size: 28px; } }
+    @media screen and (max-width: 768px) {
+      .about .container h2 {
+        font-size: 32px; } }
+    .about .container h2:before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      background-color: #4d4d4d;
+      margin-bottom: 20px; }
+  .about .container p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #4d4d4d; }
+    @media screen and (max-width: 992px) {
+      .about .container p {
+        font-size: 12px; } }
+    @media screen and (max-width: 768px) {
+      .about .container p {
+        font-size: 10px; } }
+  .about .container .download {
+    display: block;
+    text-align: center;
+    width: 245px;
+    height: 50px;
+    border: #4d4d4d solid 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-family: "Asap", sans-serif;
+    padding-top: 15px;
+    margin-top: 38px; }
+    @media screen and (max-width: 992px) {
+      .about .container .download {
+        width: 225px;
+        height: 45px;
+        font-size: 14px;
+        padding-top: 12px; } }
+    .about .container .download:hover .download:after {
+      width: 100%; }
+    .about .container .download:hover {
+      content: '';
+      display: inline-block;
+      width: 245px;
+      height: 50px;
+      background-color: #dedede;
+      transition: 0.3s;
+      border: none; }
+      @media screen and (max-width: 992px) {
+        .about .container .download:hover {
+          width: 225px;
+          height: 45px;
+          font-size: 14px;
+          padding-top: 12px; } }
+    .about .container .download .foto-about-me {
+      max-width: 570px;
+      width: 100%; }
+      @media screen and (max-width: 1024px) {
+        .about .container .download .foto-about-me img {
+          max-width: 500px;
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .about .container .download .foto-about-me img {
+          margin-top: 20px;
+          max-width: 400px; } }
+  .about .foto-about-me {
+    max-width: 575px; }
+    .about .foto-about-me img {
+      width: 100%; }
+      @media screen and (max-width: 1024px) {
+        .about .foto-about-me img {
+          max-width: 550px; } }
+      @media screen and (max-width: 992px) {
+        .about .foto-about-me img {
+          max-width: 480px; } }
+      @media screen and (max-width: 768px) {
+        .about .foto-about-me img {
+          max-width: 380px; } }
+      @media screen and (max-width: 767px) {
+        .about .foto-about-me img {
+          max-width: 100%;
+          margin-top: 15px; } }
+
+.services {
+  background-color: #f6f6f6;
+  padding-top: 120px;
+  padding-bottom: 115px; }
+  @media screen and (max-width: 1024px) {
+    .services {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
+  @media screen and (max-width: 992px) {
+    .services {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+  @media screen and (max-width: 768px) {
+    .services {
+      padding-bottom: 50px;
+      padding-top: 50px; } }
+  .services h3 {
+    font-family: "Asap", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 32px; }
+    .services h3:before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #4d4d4d;
+      margin: auto;
+      margin-bottom: 20px; }
+    @media screen and (max-width: 1024px) {
+      .services h3 {
+        font-size: 42px; } }
+    @media screen and (max-width: 992px) {
+      .services h3 {
+        font-size: 28px; } }
+    @media screen and (max-width: 768px) {
+      .services h3 {
+        font-size: 32px; } }
+  .services h5 {
+    font-family: "Asap", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #4d4d4d; }
+  .services .service-mini {
+    padding: 40px 0; }
+
+.skills {
+  padding-top: 115px;
+  padding-bottom: 120px; }
+  .skills .graph {
+    max-width: 1000px; }
+    @media screen and (max-width: 1024px) {
+      .skills .graph {
+        max-width: 900px; } }
+    @media screen and (max-width: 992px) {
+      .skills .graph {
+        max-width: 700px; } }
+    @media screen and (max-width: 768px) {
+      .skills .graph {
+        max-width: 500px; } }
+    .skills .graph img {
+      width: 100%; }
+  .skills h3 {
+    font-family: "Asap", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 32px; }
+    .skills h3:before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #4d4d4d;
+      margin: auto;
+      margin-bottom: 20px; }
+    @media screen and (max-width: 1024px) {
+      .skills h3 {
+        font-size: 42px; } }
+    @media screen and (max-width: 992px) {
+      .skills h3 {
+        font-size: 28px; } }
+    @media screen and (max-width: 768px) {
+      .skills h3 {
+        font-size: 32px; } }
+
+.skills {
+  padding-top: 115px;
+  padding-bottom: 120px; }
+  @media screen and (max-width: 1024px) {
+    .skills {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
+  @media screen and (max-width: 992px) {
+    .skills {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+  @media screen and (max-width: 768px) {
+    .skills {
+      padding-bottom: 50px;
+      padding-top: 50px; } }
+  .skills .graph img {
+    width: 100%; }
+  .skills h3 {
+    font-family: "Asap", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 32px; }
+    .skills h3:before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #4d4d4d;
+      margin: auto;
+      margin-bottom: 20px; }
+    @media screen and (max-width: 1024px) {
+      .skills h3 {
+        font-size: 42px; } }
+    @media screen and (max-width: 992px) {
+      .skills h3 {
+        font-size: 28px; } }
+    @media screen and (max-width: 768px) {
+      .skills h3 {
+        font-size: 32px; } }
+
+.portfolio {
+  background-color: #f6f6f6;
+  padding-top: 125px;
+  padding-bottom: 120px; }
+  @media screen and (max-width: 1024px) {
+    .portfolio {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
+  @media screen and (max-width: 992px) {
+    .portfolio {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+  @media screen and (max-width: 768px) {
+    .portfolio {
+      padding-bottom: 50px;
+      padding-top: 50px; } }
+  .portfolio .container h3 {
+    font-family: "Asap", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 31px; }
+    .portfolio .container h3:before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #4d4d4d;
+      margin: auto;
+      margin-bottom: 20px; }
+    @media screen and (max-width: 1024px) {
+      .portfolio .container h3 {
+        font-size: 42px; } }
+    @media screen and (max-width: 992px) {
+      .portfolio .container h3 {
+        font-size: 28px; } }
+    @media screen and (max-width: 768px) {
+      .portfolio .container h3 {
+        font-size: 32px; } }
+  .portfolio .container .portfolio-mini {
+    max-width: 370px;
+    margin: 15px 0; }
+    .portfolio .container .portfolio-mini:hover {
+      -webkit-box-shadow: 0px 0px 35px 18px #b2afaf;
+      -moz-box-shadow: 0px 0px 35px 18px #b2afaf;
+      box-shadow: 0px 0px 35px 18px #b2afaf; }
+    .portfolio .container .portfolio-mini img {
+      width: 100%; }
+  .portfolio .container .btn-2 {
+    height: 50px;
+    width: 190px;
+    margin: 0 100px;
+    background-color: white;
+    padding-top: 14px;
+    margin-top: 32px; }
+    @media screen and (max-width: 992px) {
+      .portfolio .container .btn-2 {
+        margin: 32px 300px 0 300px; } }
+    @media screen and (max-width: 768px) {
+      .portfolio .container .btn-2 {
+        margin: 32px 270px 0 270px; } }
+    @media screen and (max-width: 414px) {
+      .portfolio .container .btn-2 {
+        margin: 28px 120px 0 120px; } }
+    @media screen and (max-width: 375px) {
+      .portfolio .container .btn-2 {
+        margin: 25px 80px 0 80px; } }
+    .portfolio .container .btn-2 a {
+      font-family: "Asap", sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #4d4d4d; }
+    .portfolio .container .btn-2:hover .btn:after {
+      width: 100%; }
+    .portfolio .container .btn-2:hover {
+      display: inline-block;
+      width: 190px;
+      height: 50px;
+      background-color: #dedede;
+      transition: 0.3s;
+      border: none; }
+      @media screen and (max-width: 992px) {
+        .portfolio .container .btn-2:hover {
+          width: 110px;
+          height: 45px;
+          padding-top: 12px;
+          font-size: 13px; } }
+      @media screen and (max-width: 768px) {
+        .portfolio .container .btn-2:hover {
+          width: 100px;
+          height: 33px;
+          padding-top: 10px; } }
+
+.testimonials {
+  padding-top: 150px;
+  padding-bottom: 120px; }
+  @media screen and (max-width: 1024px) {
+    .testimonials {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
+  @media screen and (max-width: 992px) {
+    .testimonials {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+  @media screen and (max-width: 768px) {
+    .testimonials {
+      padding-bottom: 50px;
+      padding-top: 50px; } }
+  .testimonials .container h3 {
+    font-family: "Asap", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 31px; }
+    .testimonials .container h3:before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #4d4d4d;
+      margin: auto;
+      margin-bottom: 20px; }
+    @media screen and (max-width: 1024px) {
+      .testimonials .container h3 {
+        font-size: 42px; } }
+    @media screen and (max-width: 992px) {
+      .testimonials .container h3 {
+        font-size: 28px; } }
+    @media screen and (max-width: 768px) {
+      .testimonials .container h3 {
+        font-size: 32px; } }
+  .testimonials .block-carousel {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 80px 60px 120px; }
+    @media screen and (max-width: 992px) {
+      .testimonials .block-carousel {
+        padding: 60px 60px 45px 90px; } }
+    @media screen and (max-width: 768px) {
+      .testimonials .block-carousel {
+        width: 700px;
+        padding: 40px 40px 25px 60px; } }
+    @media screen and (max-width: 667px) {
+      .testimonials .block-carousel {
+        width: 600px; } }
+    @media screen and (max-width: 375px) {
+      .testimonials .block-carousel {
+        width: 300px;
+        padding: 15px;
+        display: block; } }
+    .testimonials .block-carousel .border {
+      height: 350px;
+      border: black solid  1px; }
+    .testimonials .block-carousel .foto-client {
+      width: 160px; }
+      .testimonials .block-carousel .foto-client img {
+        width: 100%; }
+    .testimonials .block-carousel .info {
+      width: 580px;
+      text-align: left;
+      margin-left: 32px; }
+      @media screen and (max-width: 768px) {
+        .testimonials .block-carousel .info {
+          width: 430px; } }
+      @media screen and (max-width: 375px) {
+        .testimonials .block-carousel .info {
+          width: 280px; } }
+      @media screen and (max-width: 320px) {
+        .testimonials .block-carousel .info {
+          width: 240px; } }
+      .testimonials .block-carousel .info .name-client {
+        font-family: "Asap", sans-serif;
+        font-weight: normal;
+        font-size: 30px;
+        color: #212121; }
+      .testimonials .block-carousel .info .post-client {
+        font-family: "Asap", sans-serif;
+        font-weight: lighter;
+        font-size: 12px;
+        color: #212121; }
+      .testimonials .block-carousel .info .info-by-client {
+        font-family: "Asap", sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        color: #212121; }
+  .testimonials .owl-carousel button.owl-dot {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border: solid 1px black;
+    margin-right: 10px;
+    text-align: center; }
+  .testimonials .owl-carousel button.owl-dots {
+    margin-right: 0;
+    margin-top: 10px;
+    text-align: center; }
+  .testimonials .owl-carousel button.owl-dot.active span {
+    background-color: black; }
+  .testimonials .owl-carousel .owl-dot.active {
+    outline: none;
+    background: black; }
+  .testimonials .no-js .owl-carousel, .testimonials .owl-carousel.owl-loaded {
+    border: solid 1px black;
+    padding-bottom: 38px; }
+
+.funfact {
+  padding-bottom: 155px; }
+  .funfact .funfact-bg {
+    background-color: #f6f6f6;
+    padding-top: 44px;
+    padding-bottom: 64px; }
+    .funfact .funfact-bg .logo-funfact {
+      margin-bottom: 33px; }
+    .funfact .funfact-bg .number {
+      font-family: "Asap", sans-serif;
+      font-weight: bold;
+      font-size: 30px; }
+    .funfact .funfact-bg .work {
+      font-family: "Asap", sans-serif;
+      font-weight: normal;
+      font-size: 30px; }
+
+.bg-footer {
+  background-image: url("../images/bg-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 145px; }
+  @media screen and (max-width: 1024px) {
+    .bg-footer {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
+  @media screen and (max-width: 992px) {
+    .bg-footer {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+  @media screen and (max-width: 768px) {
+    .bg-footer {
+      padding-bottom: 50px;
+      padding-top: 50px; } }
+  .bg-footer h3 {
+    font-family: "Asap", sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 32px; }
+    .bg-footer h3:before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: white;
+      margin: auto;
+      margin-bottom: 20px; }
+    @media screen and (max-width: 1024px) {
+      .bg-footer h3 {
+        font-size: 42px; } }
+    @media screen and (max-width: 992px) {
+      .bg-footer h3 {
+        font-size: 28px; } }
+    @media screen and (max-width: 768px) {
+      .bg-footer h3 {
+        font-size: 32px; } }
+  .bg-footer .container .form-control {
+    display: inline-block;
+    width: 370px;
+    height: 58px;
+    font-family: "Asap", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 0px; }
+    @media screen and (max-width: 1024px) {
+      .bg-footer .container .form-control {
+        width: 300px; } }
+    @media screen and (max-width: 992px) {
+      .bg-footer .container .form-control {
+        width: 500px; } }
+    @media screen and (max-width: 768px) {
+      .bg-footer .container .form-control {
+        width: 350px; } }
+    @media screen and (max-width: 375px) {
+      .bg-footer .container .form-control {
+        width: 300px; } }
+    @media screen and (max-width: 320px) {
+      .bg-footer .container .form-control {
+        width: 280px; } }
+  .bg-footer .container .textarea {
+    width: 760px;
+    height: 210px;
+    font-family: "Asap", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-left: 10px; }
+    @media screen and (max-width: 1024px) {
+      .bg-footer .container .textarea {
+        width: 625px; } }
+    @media screen and (max-width: 992px) {
+      .bg-footer .container .textarea {
+        width: 500px; } }
+    @media screen and (max-width: 768px) {
+      .bg-footer .container .textarea {
+        width: 350px; } }
+    @media screen and (max-width: 375px) {
+      .bg-footer .container .textarea {
+        width: 300px; } }
+    @media screen and (max-width: 320px) {
+      .bg-footer .container .textarea {
+        width: 280px; } }
+  .bg-footer .container .btn {
+    border-radius: 0px; }
+  .bg-footer .container .button-send {
+    width: 123px;
+    margin-top: 30px;
+    margin-left: 340px; }
+    @media screen and (max-width: 1024px) {
+      .bg-footer .container .button-send {
+        margin-left: 250px; } }
+    @media screen and (max-width: 992px) {
+      .bg-footer .container .button-send {
+        margin-left: 200px; } }
+    @media screen and (max-width: 768px) {
+      .bg-footer .container .button-send {
+        margin-left: 150px;
+        margin-top: 25px; } }
+    @media screen and (max-width: 375px) {
+      .bg-footer .container .button-send {
+        margin-top: 20px;
+        margin-left: 120px; } }
+    @media screen and (max-width: 320px) {
+      .bg-footer .container .button-send {
+        margin-top: 15px;
+        margin-left: 100px; } }
+    .bg-footer .container .button-send .input {
+      float: left;
+      width: 70%;
+      outline: none;
+      color: black;
+      line-height: 50px;
+      background-color: white;
+      border: none;
+      margin: 0;
+      padding-left: 23px;
+      font-family: "Asap", sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase; }
+    .bg-footer .container .button-send .send {
+      float: right;
+      width: 30%;
+      color: black;
+      line-height: 38px;
+      background-color: white;
+      border: none;
+      margin: 0;
+      text-align: center; }
+    .bg-footer .container .button-send .btn .fas {
+      transform: rotate(45deg); }
+    .bg-footer .container .button-send .send:after, .bg-footer .container .button-send .input:after {
+      content: '';
+      display: block;
+      clear: both; }
+
+.footer {
+  margin-top: 57px;
+  margin-left: 98px;
+  height: 85px;
+  max-width: 1175px;
+  border-top: white 1px solid;
+  display: flex; }
+  @media screen and (max-width: 660px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 0px; } }
+  .footer .social {
+    margin-top: 25px;
+    width: 210px; }
+    .footer .social a {
+      display: inline-block;
+      width: 27px;
+      line-height: 27px;
+      text-align: center;
+      font-size: 15px;
+      color: #4d4d4d;
+      background-color: white; }
+    .footer .social .fa-facebook-f:hover {
+      content: '';
+      display: inline-block;
+      background-color: #4267b2;
+      color: white;
+      transition: 0.3s; }
+    .footer .social .fa-twitter:hover {
+      content: '';
+      display: inline-block;
+      background-color: #0084b4;
+      color: white;
+      transition: 0.3s; }
+    .footer .social .fa-linkedin-in:hover {
+      content: '';
+      display: inline-block;
+      background-color: #2867b2;
+      color: white;
+      transition: 0.3s; }
+    .footer .social .fa-google-plus-g:hover {
+      content: '';
+      display: inline-block;
+      background-color: #d34836;
+      color: white;
+      transition: 0.3s; }
+    .footer .social .fa-behance:hover {
+      content: '';
+      display: inline-block;
+      background-color: #053eff;
+      color: white;
+      transition: 0.3s; }
+    .footer .social .fa-dribbble:hover {
+      content: '';
+      display: inline-block;
+      background-color: #ea4c89;
+      color: white;
+      transition: 0.3s; }
+
+.all-right {
+  font-size: 16px;
+  color: white;
+  margin: auto;
+  margin-left: 320px; }
+  @media screen and (max-width: 1024px) {
+    .all-right {
+      margin-left: 140px; } }
+  @media screen and (max-width: 992px) {
+    .all-right {
+      margin-left: 60px; } }
+  @media screen and (max-width: 768px) {
+    .all-right {
+      margin-left: 50px; } }
+  @media screen and (max-width: 660px) {
+    .all-right {
+      margin: auto;
+      margin-top: 20px; } }
+  @media screen and (max-width: 320px) {
+    .all-right {
+      margin: auto;
+      margin-top: 15px; } }
+  .all-right h5 {
+    text-align: center; }
+
+/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,130 @@
+.about{
+  padding-top: 110px;
+  padding-bottom: 120px;
+  @include max-screen(1024px){
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  @include max-screen(992px){
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @include max-screen(768px){
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .container {
+    h2 {
+      font-size: 46px;
+      font-weight: bold;
+      color: #4d4d4d;
+      @include max-screen(1024px) {
+        font-size: 42px;
+      }
+      @include max-screen(992px) {
+        font-size: 28px;
+      }
+      @include max-screen(768px) {
+        font-size: 32px;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 60px;
+        background-color: #4d4d4d;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: normal;
+      color: #4d4d4d;
+      @include max-screen(992px) {
+        font-size: 12px;
+      }
+      @include max-screen(768px) {
+        font-size: 10px;
+      }
+    }
+
+    .download {
+      display: block;
+      text-align: center;
+      width: 245px;
+      height: 50px;
+      border: #4d4d4d solid 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #4d4d4d;
+      font-size: 16px;
+      font-family: $font-family;
+      padding-top: 15px;
+      margin-top: 38px;
+      @include max-screen(992px) {
+        width: 225px;
+        height: 45px;
+        font-size: 14px;
+        padding-top: 12px;
+      }
+
+      &:hover .download:after {
+        width: 100%;
+      }
+
+      &:hover {
+        content: '';
+        display: inline-block;
+        width: 245px;
+        height: 50px;
+        background-color: #dedede;
+        transition: 0.3s;
+        border: none;
+        @include max-screen(992px) {
+          width: 225px;
+          height: 45px;
+          font-size: 14px;
+          padding-top: 12px;
+        }
+      }
+
+      .foto-about-me {
+        max-width: 570px;
+        width: 100%;
+
+        img {
+          @include max-screen(1024px) {
+            max-width: 500px;
+            width: 100%;
+          }
+          @include max-screen(768px) {
+            margin-top: 20px;
+            max-width: 400px;
+          }
+        }
+
+
+      }
+    }
+  }
+  .foto-about-me{
+    max-width: 575px;
+    img{
+      width: 100%;
+      @include max-screen(1024px){
+        max-width: 550px;
+      }
+      @include max-screen(992px){
+        max-width: 480px;
+      }
+      @include max-screen(768px){
+        max-width: 380px;
+      }
+      @include max-screen(767px){
+        max-width: 100%;
+        margin-top: 15px;
+      } }
+  }
+}

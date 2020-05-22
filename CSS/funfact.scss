@@ -1,0 +1,23 @@
+.funfact{
+  padding-bottom: 155px;
+  .funfact-bg{
+    background-color: #f6f6f6;
+    padding-top: 44px;
+    padding-bottom: 64px;
+    .logo-funfact{
+      margin-bottom: 33px;
+    }
+    .number{
+      font-family: $font-family;
+      font-weight: bold;
+      font-size: 30px;
+
+    }
+    .work{
+      font-family: $font-family;
+      font-weight: normal;
+      font-size: 30px;
+    }
+  }
+}
+

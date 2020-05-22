@@ -1,0 +1,113 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+.portfolio{
+  background-color: #f6f6f6;
+  padding-top: 125px;
+  padding-bottom: 120px;
+  @include max-screen(1024px){
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  @include max-screen(992px){
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @include max-screen(768px){
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .container{
+    h3{
+      font-family: $font-family;
+      font-weight: bold;
+      font-size: 46px;
+      color: #4d4d4d;
+      text-transform: uppercase;
+      margin-bottom: 31px;
+      &:before{
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #4d4d4d;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      @include max-screen(1024px) {
+        font-size: 42px;
+      }
+      @include max-screen(992px) {
+        font-size: 28px;
+      }
+      @include max-screen(768px) {
+        font-size: 32px;
+      }
+    }
+    .portfolio-mini{
+      max-width: 370px;
+      margin: 15px 0;
+      &:hover{
+        -webkit-box-shadow: 0px 0px 35px 18px rgba(178,175,175,1);
+        -moz-box-shadow: 0px 0px 35px 18px rgba(178,175,175,1);
+        box-shadow: 0px 0px 35px 18px rgba(178,175,175,1);
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .portfolio-mini{}
+    .btn-2{
+      height: 50px;
+      width: 190px;
+      margin: 0 100px;
+      background-color: white;
+      padding-top:14px;
+      margin-top: 32px;
+      @include max-screen(992px){
+        margin: 32px 300px 0 300px;
+      }
+      @include max-screen(768px){
+        margin: 32px 270px 0 270px;
+      }
+      @include max-screen(414px){
+        margin: 28px 120px 0 120px;
+      }
+      @include max-screen(375px){
+        margin: 25px 80px 0 80px;
+      }
+      a{
+        font-family: $font-family;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #4d4d4d;
+      }
+      &:hover .btn:after{
+        width: 100%;
+      }
+      &:hover{
+        display: inline-block;
+        width: 190px;
+        height: 50px;
+        background-color:#dedede;
+        transition: 0.3s;
+        border: none;
+        @include max-screen(992px){
+          width:110px;
+          height: 45px;
+          padding-top: 12px;
+          font-size: 13px;
+        }
+        @include max-screen(768px){
+          width: 100px;
+          height: 33px;
+          padding-top: 10px;
+        }
+      }
+
+    }
+  }
+}
